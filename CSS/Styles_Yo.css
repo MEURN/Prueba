@@ -1,0 +1,94 @@
+
+/*Se crea otra carpeta, par que sea mas organizado la decoracion de las otras pags*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    background-color: aquamarine;
+    border: 5px solid;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 80px;
+    padding: 50px;
+}
+
+.card2{
+    background-color: aquamarine;
+    border: 5px solid;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 80px;
+    padding: 50px;
+}
+
+.card3{
+    background-color: aquamarine;
+    border: 5px solid;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 60px;
+    padding: 50px;
+}
+
+.contenedor_limite{
+    background-color: green;
+    margin: 60px;
+    height: auto;
+    width: auto;
+}
+
+.padre{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap; /*Para que quede solo en una linea*/
+    justify-content: center; /*justify content y align items sirven para manipular la posicion de las cards dentro del "padre"*/
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+/*Todo el codigo de arriba (las cards, el contenedor limite y el "padre",sirven para acomodar de costado las cards///Todo eso tambien sirve para reemplazar el position*/
+
+/*Cuando las cards no entren en el contenedor se usa flex wrap para que entren*/
+
+@media screen and (max-width: 700px) { /*Todo esto sirve para que no quede mal acomodado si se usa en una pantalla mas pequeña (celular,etc*/
+    header{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav li{
+        display: block;
+    }
+}
+
+/* A continuacion va para hacer grid (Grillas)*/
+
+
+.parent {
+    margin: 0 auto; /*Para centrar*/
+    max-width: 600px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); /*Se cambia a 1 para que quede todo bien acomodado*/
+    grid-column-gap: 11px;
+    grid-row-gap: 6px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 4; }
+    .div2 { grid-area: 2 / 1 / 4 / 3; }
+    .div3 { grid-area: 2 / 3 / 4 / 4; }
+
+    /* Para agregar una imagen de fondo, se pone body (el contenedor de la pagina) y background image con el codigo url.*/
+
+    nav li :hover{
+        color: blue;
+    }

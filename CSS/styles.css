@@ -1,0 +1,97 @@
+
+/*Para cambiar el color de algo, hay que poner eso (ej: footer)*/
+
+Header{
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2; /* para poner en otra capa*/
+    /* position fixed y lo demas de abajo, hacen que el header sea FIJO*/
+}
+
+nav{
+    position: absolute;
+    display: inline;
+}
+
+h1{
+    color: aquamarine;
+    background-color: rgb(57, 183, 206); /* se puede agregar una transparencia al RGB si se agrega otra coma y se pone por ej 0,1 hasta 1*/
+    font-size: 100px;/*El tamaño es en pixeles*/
+    font-family: "Jersey 25", sans-serif; /*tambien existe font-style/ se copia todo XD*/
+    text-align: center; /*sirve para alinear el texto*/
+    
+}
+
+/*El simbolo {} es la "llave", se usa en casi todo. La clase sirve para no agregar esa "decoracion" a todo, para hacer una clase, hay que poner . y el nombre, como abajo.*/
+
+.parrafo_color{
+    color: darkturquoise;
+} 
+
+.parrafo_color2{
+    color: darkkhaki;
+}
+
+/*Se puede usar el ID, pero es solo para una etiqueta, se usa mas en javascript y otros.*/
+
+#prueba{
+    color: cyan;
+}
+
+a{
+    text-decoration: none; /*para que los text de links no tengan nada*/
+}
+
+/*Existen muchos tipos de codigos para decorar, puedo buscarlos en google*/
+
+/*Apartir de aca es para cards*/
+
+.card{ 
+background-color: chartreuse;
+width: 300px; /*Ancho*/
+height: 300px;/*alto, normalmente no se necesita*/
+text-align: center;
+border: 5px solid; /*ademas de solid, existen otros, como "double"*/
+border-color: rgb(65, 124, 6);
+padding: 5px; /*Para que los objetos dentro de la card no esten comprimidos con la pared de la card. Tambien si quiero que un lado especifico (por ej el derecho) tenga cierta medida se usa (por ej) padding-right. O se puede poner todo dentro XD*/
+margin: 25px; /*para poner distancia con los demas objetos, se puede hacer lo mismo que en el otro*/
+border-radius: 10%; /*para el radio del border*/
+
+}
+
+.card img{ /*Para "modelar la imagen". Tambien se puede poner .car (por ej) p, para editar los parrafos dentro de la clase creada (en este caso card)*/
+    width: 90%; /*Tambien se puede usar por pixeles*/
+
+}
+
+/*contenedores limite*/
+
+
+
+footer{
+    background-color: aqua;
+}
+
+.contenedor_limite{
+    background-color: black;
+    max-width: 700px;
+    margin: 0 - auto;
+
+}
+
+*{ /*el asterisco (*) es para que afecte a TODA la pagina*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+section{
+    margin: 100px;
+    
+}
+
+/* estos 2 ultimos codigos, sirven para acomodar la pag*/
+

@@ -1,0 +1,16 @@
+/* hover, sirve para agregarle una cualidad especial al clickear o pasar por encima el mouse*/
+
+nav li :hover{
+   color: brown;
+   font-size: 20px;
+}
+
+h1 :hover{
+    transform: scale(2);
+    background-color: black;
+}
+
+.contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+}
